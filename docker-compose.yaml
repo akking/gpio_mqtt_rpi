@@ -1,0 +1,9 @@
+version: '3'
+service:
+  fan:
+    build .
+    environment:
+      SWITCH_NAME: livingroom_fan
+      GPIO_PIN: '14'
+      INVERT_LOGIC: 'True'
+  
